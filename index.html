@@ -19,7 +19,7 @@
             try {
                 const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
                 const data = await response.json();
-                const btcPrice = data.bitcoin.usd;
+                const btcPrice = data.pepe.usd;
                 document.getElementById('btc-price').textContent = `$${btcPrice.toFixed(2)}`;
             } catch (error) {
                 console.error('Error fetching BTC price:', error);
